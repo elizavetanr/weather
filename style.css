@@ -60,7 +60,7 @@ body {
     border: none;
     background-color: transparent;
     cursor: pointer;
-    background-image: url('../img/search.svg');
+    background-image: url('./search.svg');
     background-repeat: no-repeat;
 }
 
