@@ -192,7 +192,6 @@ body {
 
 .tab-forecast__weather {
     padding-bottom: 31px;
-    background-image: url("../img/rain.svg");
     background-repeat: no-repeat;
     background-position: bottom;
 }
@@ -228,6 +227,6 @@ body {
     width: 17px;
     height: 16px;
     align-self: center;
-    background-image: url('../img/close-icon.svg');
+    background-image: url('./close-icon.svg');
     background-repeat: no-repeat;
 }
