@@ -3,8 +3,8 @@ import {UI_ELEMENTS, addUiFavoriteCities, addUiForecast, outputFavoriteCity} fro
 import {citiesLocalStorage, addFavoriteCitiesInLocalStorage, addFavoriteCitiesFromLocalStorageToJs, outputSelectedCity} from './storage.js';
 export const favoriteCities = new Set();
 
-const serverUrl1 = 'http://api.openweathermap.org/data/2.5/weather';
-const serverUrl2 = 'http://api.openweathermap.org/data/2.5/forecast';
+const serverUrl1 = 'https://api.openweathermap.org/data/2.5/weather';
+const serverUrl2 = 'https://api.openweathermap.org/data/2.5/forecast';
 const apiKey = '53c980ad4433b54136e7be00d64a0f1d';
 
 UI_ELEMENTS.MAIN.ENTER_CITY.addEventListener("submit", () => requestServerWeather(UI_ELEMENTS.MAIN.INPUT_FIELD.value));
