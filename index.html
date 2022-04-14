@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Work+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <title>Weather Forecast</title>
+</head>
+<body>
+<div class="weather">
+    <div class="weather__container">
+        <form class="form" onsubmit="return false">
+            <input class="form__input" value="" type="text" placeholder="Тула">
+            <input class="form__search-btn" value="" type="submit">
+        </form>
+        <div class="weather__main flex">
+            <div class="weather__tabs flex">
+                <input class="wrap-input" type="radio" name="wrap-input" id="wrap-btn_now" value="" checked>
+                <label class="wrap-btn" for="wrap-btn_now">Now</label>
+                <input class="wrap-input" type="radio" name="wrap-input" id="wrap-btn_details" value="">
+                <label class="wrap-btn" for="wrap-btn_details">Details</label>
+                <input class="wrap-input" type="radio" name="wrap-input" id="wrap-btn_forecast" value="">
+                <label class="wrap-btn" for="wrap-btn_forecast">Forecast</label>
+                <div class="weather__tab tab-now">
+                    <div class="weather__tab-container weather__tab-container_now flex">
+                        <h1 class="header header_now">
+                        </h1>
+                        <div class="tab-now__bottom flex">
+                            <div class="tab-now__city">
+                            </div>
+                            <button class="tab-now__add-to-fav">
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path opacity="0.54" fill-rule="evenodd" clip-rule="evenodd" d="M17.5 1C15.0556 1 12.8556 2.7875 12 5.125C11.1444 2.7875 8.94444 1 6.5 1C3.44444 1 1 3.6125 1 7.1875C1 12 5.27778 16.125 12 23C18.7222 16.125 23 12 23 7.1875C23 3.6125 20.5556 1 17.5 1Z" stroke="black" stroke-width="2"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="weather__tab tab-details">
+                    <div class="weather__tab-container weather__tab-container_details">
+                        <h2 class="header header_details">
+                        </h2>
+                        <ul class="tab-details__list">
+                            <li class="tab-details__list-item">
+                                Temperature: <span class="details__temp">
+                            </span>
+                            </li>
+                            <li class="tab-details__list-item">
+                                Feels like:
+                                <span class="details__feels"></span>
+                            </li>
+                            <li class="tab-details__list-item">
+                                Weather: <span class="details__weather"></span>
+                            </li>
+                            <li class="tab-details__list-item">
+                                Sunrise: <span class="details__sunrise"></span>
+                            </li>
+                            <li class="tab-details__list-item">
+                                Sunset: <span class="details__sunset"></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="weather__tab tab-forecast">
+                    <div class="weather__tab-container weather__tab-container_forecast">
+                        <h2 class="header header_forecast">
+                        </h2>
+                        <ul class="tab-forecast__list">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="weather__locations">
+                <h2 class="header header_locations">
+                    Added Locations:
+                </h2>
+                <ul class="weather__locations-list">
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="module" src="./main.js"></script>
+</body>
+</html>
