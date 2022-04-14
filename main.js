@@ -41,7 +41,11 @@ export async function requestServerWeather(cityName) {
         } = json;
         addUiFavoriteCities(icon, temp, name, feels_like, main, sunset, sunrise);
     } catch (err) {
-        alert(err);
+        if (cityName === 'Город в стиле диско' || 'город в стиле диско') {
+            alert('вы дурной');
+            requestServerWeather('Сан-франциско');
+            requestServerWeatherForecast('Сан-франциско');
+        };
     }
 };
 
